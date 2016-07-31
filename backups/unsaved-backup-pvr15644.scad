@@ -1,0 +1,10 @@
+difference()
+{
+    cylinder(h=20,r=10);
+    translate([0,0,-1])
+        cylinder(h=10,r=8);
+    translate([0,0,11])
+        cylinder(h=10,r=8);
+    translate([0,0,8])
+        cylinder(h=4,r=6);
+}

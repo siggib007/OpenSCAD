@@ -1,4 +1,4 @@
-translate ([0,0,9.4])
+translate ([0,1,11.4])
 rotate([0,90,0])
 difference()
 {
@@ -7,8 +7,8 @@ difference()
 }
 difference()
 {
-	translate([0,-5,0]) cube([100,10,5]);
-	translate([96,-4,1]) cube([5,8,3]);
+	translate([0,-5,0]) cube([100,12,7]);
+	translate([90,-3,2]) cube([11,8,3]);
 }
-translate([0,10,0]) cube([95,10,5]);
-color("red") translate([95,11,1]) cube([5,8,3]);
+translate([0,10,0]) cube([90,12,7]);
+color("red") translate([90,12,2]) cube([10,8,3]);

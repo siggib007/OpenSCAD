@@ -1,9 +1,9 @@
 difference()
 {
-	cube([90,100,60]);
-	translate([5,5,5]) cube([80,92,54]);
-	translate([3,5,5]) cube([2,100,2]);
-	translate([85,5,5]) cube([2,100,2]);
-	translate([5,95,5]) cube([80,7,20]);
-	translate([5,98,20]) cube([80,4,10]);
+	cube([70,120,40]);
+	translate([5,5,5]) cube([60,112,34]);
+	translate([3,5,5]) cube([2,120,2]);
+	translate([65,5,5]) cube([2,120,2]);
+	translate([5,115,5]) cube([60,7,20]);
+	translate([5,118,20]) cube([60,4,10]);
 }

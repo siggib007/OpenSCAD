@@ -1,4 +1,4 @@
-LightBox(60,115,25);
+LightBox(60,110,25);
 
 module LightBox(W,L,FaceH)
 {

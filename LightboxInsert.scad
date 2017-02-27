@@ -1,5 +1,5 @@
 //Lightbox Measurements
-L=115; //Length of Lightbox
+L=110; //Length of Lightbox
 W=60; //Width of Lightbox
 FaceH=25; //Height of FacePlate
 //Constants

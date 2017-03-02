@@ -8,10 +8,10 @@ module LightBox(W,L,FaceH)
 	difference()
 	{
 		Wall=5; //Wall and bottom Thickness
-		H=FaceH+Wall*2; //Height of the box is the height of the Faceplate plus two walls
+		H=FaceH+(Wall*2); //Height of the box is the height of the Faceplate plus two walls
 		Top=1; //Thickness of the top of the box
-		SlotH=2; //Slot height for the slide in insert
-		SlotW=2; //Width of the tab for the slot
+		SlotH=3; //Slot height for the slide in insert
+		SlotW=2.5; //Width of the tab for the slot
 		FaceT=2; //Thickness of the Faceplate
 		Buffer=1;//Extra space required to cut through other objects.
 		TwoWall = Wall*2; //Two walls combined width

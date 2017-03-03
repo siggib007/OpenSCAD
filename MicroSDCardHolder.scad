@@ -12,16 +12,4 @@ module MicroSD(CardW,CardL,CardH,Wall)
 		translate([Wall,Wall,Wall]) cube([CardW,CardL,CardH]);
 		translate([Wall,CardL-Wall,Wall]) cube([CardW,CutoutL,CutoutH]);
 	}
-	translate([HolderW*1,0,0]) difference()
-	{
-		cube([HolderW,CardL,HolderH]);
-		translate([Wall,Wall,Wall]) cube([CardW,CardL,CardH]);
-		translate([Wall,CardL-Wall,Wall]) cube([CardW,CutoutL,CutoutH]);
-	}
-	translate([HolderW*2,0,0]) difference()
-	{
-		cube([HolderW,CardL,HolderH]);
-		translate([Wall,Wall,Wall]) cube([CardW,CardL,CardH]);
-		translate([Wall,CardL-Wall,Wall]) cube([CardW,CutoutL,CutoutH]);
-	}
 }

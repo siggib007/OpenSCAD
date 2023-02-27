@@ -1,4 +1,4 @@
-$fn = 64;
+$fn = 32;
 Hole=2;
 Space=1;
 cs=(Hole/2)+Space;

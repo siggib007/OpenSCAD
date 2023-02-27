@@ -1,11 +1,12 @@
-$fn = 32;
+BoxH=170;
+BoxW=110;
+BoxD=50;
+Wall=4;
 Hole=2;
 Space=1;
+
+$fn = 32;
 cs=(Hole/2)+Space;
-BoxH=50;
-BoxW=50;
-BoxD=20;
-Wall=2;
 DW=Wall*2;
 csWall=cs+Wall;
 YPos=BoxD+DW;

@@ -1,27 +1,32 @@
 BoxW=200;
 BoxD=50;
-BoxH=8;
+BoxH=10;
 FromEdge=10;
 MountHole=5;
 displayHole=4;
 ScrewHead=10;
+xdist=122;
+ydist=11;
+xDFE=(BoxW-xdist)/2;
+yDFE=(BoxD-ydist)/2;
+DrillLen=BoxH*2;
 
 difference()
 {
   cube([BoxW,BoxD,BoxH]);
-  translate([10,10,-5]) cylinder(h=15,d=5);
-  translate([190,10,-5]) cylinder(h=15,d=5);   
-  translate([10,40,-5]) cylinder(h=15,d=5);
-  translate([190,40,-5]) cylinder(h=15,d=5);   
+  translate([FromEdge,FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);
+  translate([BoxW-FromEdge,FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);   
+  translate([FromEdge,BoxD-FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);
+  translate([BoxW-FromEdge,BoxD-FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);   
 
-  translate([39,19,-5]) cylinder(h=15,d=3);
-  translate([161,19,-5]) cylinder(h=15,d=3);   
-  translate([39,30,-5]) cylinder(h=15,d=3);
-  translate([161,30,-5]) cylinder(h=15,d=3);   
+  translate([xDFE,yDFE,-5]) cylinder(h=DrillLen,d=displayHole);
+  translate([xDFE+xdist,yDFE,-5]) cylinder(h=DrillLen,d=displayHole);   
+  translate([xDFE,yDFE+ydist,-5]) cylinder(h=DrillLen,d=displayHole);
+  translate([xDFE+xdist,yDFE+ydist,-5]) cylinder(h=DrillLen,d=displayHole);
   
-  translate([39,19,5]) cylinder(h=15,d=10);
-  translate([161,19,5]) cylinder(h=15,d=10);   
-  translate([39,30,5]) cylinder(h=15,d=10);
-  translate([161,30,5]) cylinder(h=15,d=10);   
+  translate([xDFE,yDFE,5]) cylinder(h=DrillLen,d=ScrewHead);
+  translate([xDFE+xdist,yDFE,5]) cylinder(h=DrillLen,d=ScrewHead);   
+  translate([xDFE,yDFE+ydist,5]) cylinder(h=DrillLen,d=ScrewHead);
+  translate([xDFE+xdist,yDFE+ydist,5]) cylinder(h=DrillLen,d=ScrewHead);   
 
 }

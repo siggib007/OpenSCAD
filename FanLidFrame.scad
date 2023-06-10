@@ -13,5 +13,5 @@ difference()
 {
   cube([BoxH,BoxW,BoxD],true);
   cube([cutH,cutW,cutD],true);
-  translate([cutD-2,0,2]) cube([LidH+10,LidW,LidD+1],true);
+  translate([cutD-2,0,2]) cube([LidH+10,LidW+1,LidD+1],true);
 }

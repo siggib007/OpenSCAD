@@ -1,3 +1,4 @@
+$fn = 96;
 difference()
 {
     union()

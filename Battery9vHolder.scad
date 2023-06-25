@@ -2,9 +2,9 @@ $fn = 96;
 
 BoxZ=40;
 BoxY=160;
-BoxX=130;
-BatteryW=26;
-BatteryD=17;
+BoxX=115;
+BatteryD=26;
+BatteryW=17;
 BatteryH=45;
 Space=5;
 BoxWall=5;

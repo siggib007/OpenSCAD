@@ -1,7 +1,7 @@
-BoxZ=80;
+BoxZ=70;
 BoxY=150;
-BoxX=130;
-Wall=10;
+BoxX=126;
+Wall=7;
 DW=Wall*2;
 QW=Wall*4;
 

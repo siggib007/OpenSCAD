@@ -1,7 +1,7 @@
 $fn = 96;
 
 BoxZ=10;
-BoxY=160;
+BoxY=130;
 BoxX=115;
 BatteryD=26;
 BatteryW=17;

@@ -8,8 +8,8 @@ difference()
   
 difference()
 {
-  translate([10,0,110]) cube([5,85,40]);
-  translate([5,45,150]) rotate([0,90,0]) cylinder(h=16,d=55);
+  translate([30,0,110]) cube([5,85,40]);
+  translate([25,45,150]) rotate([0,90,0]) cylinder(h=16,d=50);
 }
 
 translate([190,0,80])  cube([5,85,70]);
@@ -20,5 +20,5 @@ translate([110,36,55])  rotate([100,0,0]) cylinder(h=35,d=10);
 translate([70,36,55])   rotate([100,0,0]) cylinder(h=35,d=16);
 translate([30,40,55])   rotate([100,0,0]) cylinder(h=40,d=6);
 
-translate([100,30,20])  rotate([110,0,0]) cylinder(h=30,d=5);
-translate([40,30,20])   rotate([110,0,0]) cylinder(h=30,d=5);
+translate([110,30,20])  rotate([110,0,0]) cylinder(h=30,d=8);
+translate([30,30,20])   rotate([110,0,0]) cylinder(h=30,d=8);

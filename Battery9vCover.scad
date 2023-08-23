@@ -1,3 +1,4 @@
+
 $fn = 96;
 
 BoxZ=20;
@@ -20,8 +21,11 @@ difference()
   {
     for (x=[BoxWall:BatteryW+Space:MaxX])
     {
-      translate([x,y,BoxFloor]) cube([BatteryW,BatteryD,BatteryH]);
-      
+      translate([x,y,BoxFloor]) cube([BatteryW,BatteryD,BatteryH]);   
     }
   }
+  translate([3,3,BoxZ-2]) cylinder(d=4,h=3);
+  translate([BoxX-3,3,BoxZ-2]) cylinder(d=4,h=3);
+  translate([3,BoxY-3,BoxZ-2]) cylinder(d=4,h=3);
+  translate([BoxX-3,BoxY-3,BoxZ-2]) cylinder(d=4,h=3);
 }

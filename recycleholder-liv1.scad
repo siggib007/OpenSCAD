@@ -1,5 +1,5 @@
-InnerX=180;
-InnerY=140;
+InnerX=200;
+InnerY=150;
 Height=50;
 Wall=20;
 Buffer=5;

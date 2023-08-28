@@ -18,6 +18,8 @@ translate([110,0,80])   cube([5,40,20]);
 translate([40,30,90])   rotate([0,090,0]) cylinder(h=75,d=10);
 translate([110,36,55])  rotate([100,0,0]) cylinder(h=35,d=10);
 translate([70,36,55])   rotate([100,0,0]) cylinder(h=35,d=16);
+translate([30,21,51.5]) rotate([100,0,0]) cylinder(h=20,d=10);
+translate([30,31,53.5]) rotate([100,0,0]) cylinder(h=30,d=8);
 translate([30,40,55])   rotate([100,0,0]) cylinder(h=40,d=6);
 
 translate([110,30,20])  rotate([110,0,0]) cylinder(h=30,d=8);

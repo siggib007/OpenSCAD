@@ -1,5 +1,5 @@
 difference()
 {
-  cube([67,67,90]);
-  translate([2.5,2.5,70]) cube([62,62,30]);
+  cube([82,82,100]);
+  translate([10,10,70]) cube([62,62,50]);
 }

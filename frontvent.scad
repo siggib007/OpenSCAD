@@ -44,5 +44,3 @@ difference()
   translate([-8,-10,5]) cube([BoxW,15,BoxH-10]);
 }
 
-translate([BoxW*2,-5,0]) cube([BoxW,BoxD,BoxH]);
-

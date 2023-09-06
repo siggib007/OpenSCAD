@@ -14,6 +14,7 @@ DrillLen=BoxH*2;
 difference()
 {
   cube([BoxW,BoxD,BoxH]);
+  translate([BoxW/2-10,BoxD/2-5,-2]) cube([20,10,15]);
   translate([FromEdge,FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);
   translate([BoxW-FromEdge,FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);   
   translate([FromEdge,BoxD-FromEdge,-5]) cylinder(h=DrillLen,d=MountHole);

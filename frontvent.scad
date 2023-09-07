@@ -41,6 +41,6 @@ difference()
 difference()
 {
   translate([0,-5,-20]) cube([BoxW+10,5,BoxH+40]);
-  translate([-8,-10,5]) cube([BoxW,15,BoxH-10]);
+  #translate([-8,-10,5]) cube([BoxW,15,BoxH-10]);
 }
 

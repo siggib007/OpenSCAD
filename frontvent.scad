@@ -1,46 +1,50 @@
 BoxH=150;
 BoxW=72;
-BoxD=10;
-Wall=6;
+Wall=5;
 Hole=2;
 Space=1;
-
 MagnetD=9;
 MagnetH=4;
-MagnetR=ceil(MagnetD/2)+1;
+Filter=7;
+Tab=15;
+TabLoc=10;
 
-$fn = 32;
-cs=(Hole/2)+Space;
+MagnetR=ceil(MagnetD/2)+1;
+cs=Hole+Space;
 DW=Wall*2;
-csWall=cs+Wall;
+QW=Wall*4;
+DT=Tab*2;
+BoxD=10+DW+Filter;
+csWall=MagnetD+Space;
 YPos=BoxD+DW;
-TopZ=BoxH-cs;
+TopZ=BoxH-MagnetD-Wall;
 MaxX=BoxW-DW;
+MaxY=BoxD-DW;
 
 
 difference()
 {
   cube([BoxW,BoxD,BoxH]);
-  translate([Wall,Wall,Wall]) cube([BoxW-DW,BoxD-DW,BoxH]);
-  for (z=[DW:cs:TopZ])
+  translate([Wall,Wall+10,Wall]) cube([BoxW-DW,Filter,BoxH]);
+  for (z=[csWall:cs:TopZ])
   {
-    for (x=[DW:cs:MaxX])
+    for (x=[csWall:cs:MaxX])
     {
-      translate([x,YPos,z]) rotate([90,90,0]) cylinder(h=BoxD+DW+DW,d=Hole);
+      translate([x,-cs,z]) cube([Hole,BoxD+DW,Hole]);
     }
   }
-  translate([MagnetR,BoxD+1,BoxH-MagnetR]) rotate([90,0,0])
+  translate([MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,BoxD+1,BoxH-MagnetR]) rotate([90,0,0])
+  translate([BoxW-MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD, h=MagnetH);
-  translate([MagnetR,BoxD+1,MagnetR]) rotate([90,0,0])
+  translate([MagnetR,1,MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,BoxD+1,MagnetR]) rotate([90,0,0])
+  translate([BoxW-MagnetR,1,MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD, h=MagnetH);
 }
 difference()
 {
-  translate([0,-5,-20]) cube([BoxW+10,5,BoxH+40]);
-  #translate([-8,-10,5]) cube([BoxW,15,BoxH-10]);
+  translate([0,TabLoc,0]) cube([BoxW+Tab,Wall,BoxH+Tab]);
+  translate([-1,TabLoc-1,-1]) cube([BoxW+1,Tab,BoxH+1]);
 }
 

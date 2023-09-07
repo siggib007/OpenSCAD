@@ -13,11 +13,13 @@ FanD=25;
 Tab=15;
 TabLoc=18;
 
+Brim=MagnetD+Wall;
 MagnetR=ceil(MagnetD/2)+1;
 cs=Hole+Space;
 DW=Wall*2;
 QW=Wall*4;
 DT=Tab*2;
+DB=Brim*2;
 csWall=cs+Wall;
 YPos=BoxD+DW;
 TopZ=BoxH-cs;
@@ -32,14 +34,14 @@ difference()
     translate([-Tab,TabLoc,0]) cube([BoxW+DT,Wall,BoxH]);
   }
   translate([Wall,Wall,Wall]) cube([FanW,FanD,FanH]);
-  translate([DW,-DW,DW]) cube([BoxW-QW,BoxD+DW+1,BoxH]);
-  translate([MagnetR,BoxD+1,BoxH-MagnetR]) rotate([90,0,0])
+  translate([Brim,-DW,Brim]) cube([BoxW-DB,BoxD+DW+1,BoxH]);
+  translate([MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,BoxD+1,BoxH-MagnetR]) rotate([90,0,0])
+  translate([BoxW-MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD, h=MagnetH);
-  translate([MagnetR,BoxD+1,MagnetR]) rotate([90,0,0])
+  translate([MagnetR,1,MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,BoxD+1,MagnetR]) rotate([90,0,0])
+  translate([BoxW-MagnetR,1,MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD, h=MagnetH);
   
 }

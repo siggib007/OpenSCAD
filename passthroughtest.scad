@@ -1,8 +1,10 @@
 difference()
 {
-  cube([100,40,5]);
-  translate([38,12,0.25]) cube([24,16,5]);
-  translate([38,12,-1]) cube([0.5,16,8]);
-  translate([62,12,-1]) cube([0.5,16,8]);
-  translate([38,20,-1]) cube([24,1.5,8]);
+  cube([50,30,5]);
+  translate([13,7,0.2]) cube([24,16,5]);
+  translate([13,7,-1])  cube([0.1,16,8]);
+  translate([13,15,-1])  cube([24,.1,8]);
+  translate([18,7,-1])  cube([0.1,16,8]);
+  translate([33,7,-1])  cube([0.1,16,8]);
+  translate([38,7,-1])  cube([0.1,16,8]);
 }

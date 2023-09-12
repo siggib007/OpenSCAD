@@ -1,5 +1,5 @@
-BoxW=250;
-BoxD=50;
+BoxW=180;
+BoxD=55;
 BoxH=10;
 FromEdge=10;
 MountHole=5;

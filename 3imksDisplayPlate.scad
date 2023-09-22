@@ -1,4 +1,4 @@
-BoxW=180;
+BoxW=190;
 BoxD=55;
 BoxH=10;
 FromEdge=10;

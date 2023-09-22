@@ -33,14 +33,14 @@ difference()
       translate([x,-cs,z]) cube([Hole,BoxD+DW,Hole]);
     }
   }
-  translate([MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
+  translate([MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,1,BoxH-MagnetR]) rotate([90,0,0])
-    cylinder(d=MagnetD, h=MagnetH);
-  translate([MagnetR,1,MagnetR]) rotate([90,0,0])
+  translate([BoxW-MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
-  translate([BoxW-MagnetR,1,MagnetR]) rotate([90,0,0])
-    cylinder(d=MagnetD, h=MagnetH);
+  translate([MagnetR,MagnetH-1,MagnetR]) rotate([90,0,0])
+    cylinder(d=MagnetD,h=MagnetH);
+  translate([BoxW-MagnetR,MagnetH-1,MagnetR]) rotate([90,0,0])
+    cylinder(d=MagnetD,h=MagnetH);
 }
 difference()
 {

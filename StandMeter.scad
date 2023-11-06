@@ -5,10 +5,10 @@ module triangle(l, w, h){
               );
             }
 
-rotate([60,0,0]) difference()
+rotate([50,0,0]) difference()
 {
   cube([90,50,25]);
   translate([-2,5,5]) cube([95,60,30]);
 }
 
-triangle(90,24,42);
+triangle(90,30,40);

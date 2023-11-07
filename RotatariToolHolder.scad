@@ -2,9 +2,9 @@ $fn=128;
 XStart=80;
 YStart=10;
 XStart2=10;
-YStart2=190;
+YStart2=200;
 XStart3=40;
-YStart3=160;
+YStart3=170;
 
 
 Space=10;
@@ -15,11 +15,13 @@ BoxFloor=10;
 difference()
 {
   cube([BoxX,BoxY,BoxZ]);
+  translate([138,175,10]) cube([2,9,30]);
+  translate([7,13,20]) cube([26,30,15]);
   translate([20,130,30]) rotate([90,0,0]) cylinder(d=24,h=120);
   translate([20,180,30]) rotate([90,0,0]) cylinder(d=18,h=51);
-  translate([55,65,30]) rotate([90,0,0]) cylinder(d=30,h=55);
-  translate([55,115,30]) rotate([90,0,0]) cylinder(d=27,h=51);
-  translate([55,155,30]) rotate([90,0,0]) cylinder(d=18,h=41);
+  translate([55,65,30])  rotate([90,0,0]) cylinder(d=30,h=55);
+  translate([55,125,30]) rotate([90,0,0]) cylinder(d=27,h=61);
+  translate([55,165,30]) rotate([90,0,0]) cylinder(d=18,h=41);
   for (y=[YStart:Space:BoxY-Space])
   {
     for (x=[XStart:Space:BoxX-Space])

@@ -1,6 +1,6 @@
 BoxX=150;
 BoxY=190;
-BoxZ=100;
+BoxZ=80;
 Space=5;
 Start=10;
 Wall=3;

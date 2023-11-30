@@ -16,7 +16,7 @@ difference()
 {
   cube([BoxX,BoxY,BoxZ]);
   translate([138,175,-1]) cube([2,9,35]);
-  translate([7,13,20]) cube([26,30,15]);
+  translate([7,13,20]) cube([26,35,15]);
   translate([20,130,30]) rotate([90,0,0]) cylinder(d=24,h=120);
   translate([20,180,30]) rotate([90,0,0]) cylinder(d=18,h=51);
   translate([55,65,30])  rotate([90,0,0]) cylinder(d=30,h=55);

@@ -16,8 +16,8 @@ BatterySpace=BatteryD+Space;
 Wall=MagnetD-Space;
 
 BoxZ=(BatteryH*Height)+BoxFloor;
-BoxY=(BatterySpace*Rows)+(Wall*2)-2;
-BoxX=(BatterySpace*Col)+(Wall*2)-2;
+BoxY=(BatterySpace*Rows)+(Wall*2)-Space;
+BoxX=(BatterySpace*Col)+(Wall*2)-Space;
 
 MagnetR=(MagnetD/2)+1;
 Start=(BatteryD/2)+Wall;

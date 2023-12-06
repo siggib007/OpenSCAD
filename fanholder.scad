@@ -1,4 +1,4 @@
-BoxH=120;
+BoxH=125;
 BoxW=130;
 BoxD=35;
 Wall=5;
@@ -35,8 +35,8 @@ difference()
     cube([BoxW,BoxD,BoxH]);
     translate([-Tab,TabLoc,0]) cube([TabWith,Wall,BoxH]);
   }
-  translate([Wall,Wall,Wall]) cube([FanW,FanD,FanH]);
-  translate([Brim,-DW,Brim]) cube([BoxW-DB,BoxD+DW+1,BoxH]);
+  translate([Wall,Wall,Wall]) cube([FanW,FanD,FanH+Wall]);
+  translate([Brim,-DW,Brim]) cube([BoxW-DB,BoxD+DW+1,BoxH-Brim-Wall]);
   translate([MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
   translate([BoxW-MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])

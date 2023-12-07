@@ -36,7 +36,17 @@ difference()
     translate([-Tab,TabLoc,0]) cube([TabWith,Wall,BoxH]);
   }
   translate([Wall,Wall,Wall]) cube([FanW,FanD,FanH+Wall]);
-  translate([Brim,-DW,Brim]) cube([BoxW-DB,BoxD+DW+1,BoxH-Brim-Wall]);
+
+  translate([Brim,-DW,Brim]) cube([48,BoxD+DW+1,30]);
+  translate([Brim+55,-DW,Brim]) cube([48,BoxD+DW+1,30]);
+  translate([Brim,-DW,Brim+65]) cube([48,BoxD+DW+1,30]);
+  translate([Brim+55,-DW,Brim+65]) cube([48,BoxD+DW+1,30]);
+
+  translate([Brim,-DW,Brim+25]) cube([34,BoxD+DW+1,20]);
+  translate([Brim+69,-DW,Brim+25]) cube([34,BoxD+DW+1,20]);
+  translate([Brim,-DW,64]) cube([34,BoxD+DW+1,20]);
+  translate([Brim+69,-DW,64]) cube([34,BoxD+DW+1,20]);
+
   translate([MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])
     cylinder(d=MagnetD,h=MagnetH);
   translate([BoxW-MagnetR,MagnetH-1,BoxH-MagnetR]) rotate([90,0,0])

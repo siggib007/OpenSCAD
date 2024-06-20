@@ -5,8 +5,8 @@ cutH=BoxH+10;
 cutW=BoxW+10;
 cutD=BoxD+10;
 slotH=3;
-slotW=80;
-slotD=40;
+slotW=72;
+slotD=30;
 
 difference()
 {

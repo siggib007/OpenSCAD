@@ -9,7 +9,7 @@ rotate([-90,0,0])
     translate([105,-2,0]) rotate([0,-25,0]) cube([15,10,30]);
   }
   translate([-5,3,0]) cylinder(h=10,d=6);
-  translate([-5,3,0]) cylinder(h=30,d=3.0);
+  translate([-5,3,0]) cylinder(h=30,d=3.1);
   translate([-5,0,0]) cube([5,6,10]);
 
   translate([0,30,0])

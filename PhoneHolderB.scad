@@ -1,4 +1,4 @@
-$fn=128;
+$fn=256;
 rotate([-90,0,0])
 {
   difference()
@@ -8,10 +8,16 @@ rotate([-90,0,0])
     translate([80,-2,5]) rotate([0,-25,0]) cube([15,10,30]);
     translate([105,-2,0]) rotate([0,-25,0]) cube([15,10,30]);
   }
-  translate([-8,-1,10]) cube([6,6,20]);  
   difference()
   {
-    translate([-5,-3,10]) cylinder(h=20,d=6);
-    translate([-5,-3,-2]) cylinder(h=35,d=3.5);
+    union()
+    {
+      translate([-7,-2,0]) cube([6,7,30]);
+      translate([-4,-4,0]) cylinder(h=30,d=6);
+    }
+    translate([-4,-4,-2]) cylinder(h=35,d=2);
+    translate([-12,-10,-1]) cube([15,10,6.5]);
+    translate([-12,-10,9.5]) cube([15,10,6]);
+    translate([-12,-10,19.5]) cube([15,10,6]);
   }
 }

@@ -1,7 +1,7 @@
 $fn=128;
 difference()
 {
-  cube([105,6,30]);
+  cube([30,6,30]);
   translate([76,-2,15]) cube([30,10,30]);
   translate([80,-2,5]) rotate([0,-25,0]) cube([15,10,30]);
   translate([105,-2,0]) rotate([0,-25,0]) cube([15,10,30]);
@@ -24,7 +24,7 @@ translate([0,30,0])
 {
   difference()
   {
-    translate([-1,0,0]) cube([106,5,30]);
+    translate([-1,0,0]) cube([30,5,30]);
     translate([76,-2,15]) cube([30,10,30]);
     translate([80,-2,5]) rotate([0,-25,0]) cube([15,10,30]);
     translate([105,-2,0]) rotate([0,-25,0]) cube([15,10,30]);

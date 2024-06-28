@@ -1,6 +1,6 @@
 $fn=256;
 BoxH=70;
-BoxD=60;
+BoxD=65;
 Wall=3;
 DW=Wall*2;
 

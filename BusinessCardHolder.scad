@@ -11,7 +11,7 @@ difference()
   translate([-4,2,6]) cube([20,96,60]);
   translate([-2,-2,6]) cube([25,105,60]);
 }
-translate([17,50,10]) 
-rotate([75,0,90])
-linear_extrude(height=2, convexity=2) 
-text("Öruggt Net",9, font="Tahoma", halign="center", valign="middle");
+//translate([17,50,10]) 
+//rotate([75,0,90])
+//linear_extrude(height=2, convexity=2) 
+//text("Öruggt Net",9, font="Tahoma", halign="center", valign="middle");

@@ -14,16 +14,17 @@ NumPenSlots=3;
 difference()
 {
   cube([BoxW+DW,BoxD+Wall+PenD+DW,BoxH]);
-  translate([Wall,Wall,Wall]) 
+  translate([Wall,Wall,Wall])
     cube([BoxW,BoxD,BoxH]);
-  translate([Wall,DW+BoxD,Wall]) 
+  translate([Wall,DW+BoxD,Wall])
     cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
-  translate([(BoxW/NumPenSlots)+Wall,DW+BoxD,Wall])
-    cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
-  translate([((BoxW/NumPenSlots)*2)+Wall,DW+BoxD,Wall]) 
-    cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
-  translate([-Wall,Buffer,Wall]) 
+  for(i=[1:NumPenSlots-1])
+  {
+    translate([((BoxW/NumPenSlots)*i)+Wall,DW+BoxD,Wall])
+      cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
+  }
+  translate([-Wall,Buffer,Wall])
     cube([BoxW+Buffer,Slot,BoxH]);
-  translate([Buffer,-Wall,FrontLip]) 
+  translate([Buffer,-Wall,FrontLip])
     cube([BoxW-DB,Buffer,BoxH]);
 }

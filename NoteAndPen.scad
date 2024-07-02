@@ -1,0 +1,29 @@
+PenD=30;
+BoxH=70;
+BoxD=150;
+BoxW=110;
+Wall=3;
+PennWall=1;
+DW=Wall*2;
+Slot=110;
+Buffer=20;
+FrontLip=25;
+DB=Buffer*2;
+NumPenSlots=3;
+
+difference()
+{
+  cube([BoxW+DW,BoxD+Wall+PenD+DW,BoxH]);
+  translate([Wall,Wall,Wall]) 
+    cube([BoxW,BoxD,BoxH]);
+  translate([Wall,DW+BoxD,Wall]) 
+    cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
+  translate([(BoxW/NumPenSlots)+Wall,DW+BoxD,Wall])
+    cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
+  translate([((BoxW/NumPenSlots)*2)+Wall,DW+BoxD,Wall]) 
+    cube([(BoxW/NumPenSlots)-PennWall,PenD,BoxH]);
+  translate([-Wall,Buffer,Wall]) 
+    cube([BoxW+Buffer,Slot,BoxH]);
+  translate([Buffer,-Wall,FrontLip]) 
+    cube([BoxW-DB,Buffer,BoxH]);
+}

@@ -25,6 +25,6 @@ difference()
   }
   translate([-Wall,Buffer,Wall])
     cube([BoxW+Buffer,Slot,BoxH]);
-  translate([Buffer,-Wall,FrontLip])
+  translate([Buffer+Wall,-Wall,FrontLip])
     cube([BoxW-DB,Buffer,BoxH]);
 }

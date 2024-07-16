@@ -1,9 +1,9 @@
 $fn=256;
-BoxH=70;
-BoxD=65;
-Wall=3;
+BoxH=35;
+LabelH=25;
+BoxD=35;
+Wall=2;
 DW=Wall*2;
-LabelH=60;
 LabelCenter=(BoxH-LabelH)/2;
 BM=LabelCenter;
 TM=BoxH-LabelCenter;

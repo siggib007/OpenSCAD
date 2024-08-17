@@ -4,7 +4,7 @@ rotate([-90,0,0])
   difference()
   {
     translate([0,0,0]) cube([105,6,30]);
-    translate([76,-2,20]) cube([30,10,30]);
+    translate([76,-2,22]) cube([30,10,30]);
     translate([80,-2,5]) rotate([0,-25,0]) cube([23,10,30]);
     
   }

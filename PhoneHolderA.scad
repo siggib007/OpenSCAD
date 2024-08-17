@@ -4,9 +4,9 @@ rotate([-90,0,0])
   difference()
   {
     cube([105,6,30]);
-    translate([76,-2,18]) cube([30,10,30]);
-    translate([80,-2,5]) rotate([0,-25,0]) cube([15,10,30]);
-    translate([105,-2,0]) rotate([0,-25,0]) cube([15,10,30]);
+    translate([76,-2,20]) cube([30,10,30]);
+    translate([80,-2,5]) rotate([0,-25,0]) cube([23,10,30]);
+    
   }
   difference()
   {

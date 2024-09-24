@@ -1,13 +1,25 @@
-difference()
-{
-  cylinder(h=8,d=60);
-  translate([0,0,4]) cylinder(h=5,d=51.5);
-}
-translate([28,-5,0]) cube([6,10,4]);
-translate([34,0,0]) cylinder(h=4,d=10);
+Height=8;
+TotalDia=60;
+CanDia=52;
+TopHeigh=4;
+InnerHeight=2;
+Rim=2;
+InnerDia=CanDia-(Rim*2);
 
 difference()
 {
-  translate([0,0,2]) cylinder(h=3,d=48.5);
-  translate([0,0,2]) cylinder(h=4,d=46);
+  cylinder(h=Height,d=TotalDia);
+  translate([0,0,TopHeigh]) cylinder(h=Height,d=CanDia);
+}
+
+difference()
+{
+  translate([0,0,TopHeigh]) cylinder(h=InnerHeight,d=InnerDia);
+  translate([0,0,TopHeigh+1]) cylinder(h=Height,d=InnerDia-2);
+}
+
+union() //Tabs
+{
+  translate([28,-5,0]) cube([6,10,4]);
+  translate([34,0,0]) cylinder(h=4,d=10);
 }

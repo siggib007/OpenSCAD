@@ -1,6 +1,6 @@
 Height=8;
 TotalDia=60;
-CanDia=52;
+CanDia=54; // Narrow EU cans 52. Wide US cans 54.
 TopHeigh=4;
 InnerHeight=2;
 Rim=2;

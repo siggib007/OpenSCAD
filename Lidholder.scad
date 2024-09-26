@@ -1,5 +1,5 @@
 Dia=62;
-Height=90;
+Height=100;
 $fn=128;
 Wall=5;
 Buffer=10;

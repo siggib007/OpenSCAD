@@ -1,7 +1,8 @@
 $fn=128;
 Height=10;
 TotalDia=60;
-CanDia=54; // Narrow EU cans 52. Wide US cans 54.
+CanDia=52; // Narrow EU cans 52. Wide US cans 54.
+Text="Narrow";
 TopHeigh=4;
 InnerHeight=2;
 Rim=2;
@@ -31,3 +32,6 @@ union() //Tabs
 
 translate([CanRadius-1,-2,TopHeigh+3]) cube([1,4,1]);
 translate([-CanRadius,-2,TopHeigh+3]) cube([1,4,1]);
+translate([0,10,TopHeigh]) 
+linear_extrude(height=2, convexity=2) 
+text(Text,9, font="Tahoma", halign="center", valign="top");

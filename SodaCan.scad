@@ -1,3 +1,4 @@
+$fn=128;
 Height=10;
 TotalDia=60;
 CanDia=54; // Narrow EU cans 52. Wide US cans 54.
@@ -7,6 +8,8 @@ Rim=2;
 InnerDia=CanDia-(Rim*2);
 OuterRadius=TotalDia/2;
 CanRadius=CanDia/2;
+//echo(TotalDia > CanDia + 1 ? TotalDia : CanDia +2);
+//OuterDia = TotalDia > CanDia + 1 ? TotalDia : CanDia +2;
 
 difference()
 {
@@ -22,9 +25,9 @@ difference()
 
 union() //Tabs
 {
-  translate([28,-5,0]) cube([6,10,4]);
-  translate([34,0,0]) cylinder(h=4,d=10);
+  translate([OuterRadius-2,-5,0]) cube([6,10,4]);
+  translate([OuterRadius+4,0,0]) cylinder(h=4,d=10);
 }
 
-translate([CanRadius-1,-2,TopHeigh+3]) cube([2,4,1]);
-translate([-CanRadius-1,-2,TopHeigh+3]) cube([2,4,1]);
+translate([CanRadius-1,-2,TopHeigh+3]) cube([1,4,1]);
+translate([-CanRadius,-2,TopHeigh+3]) cube([1,4,1]);

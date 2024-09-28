@@ -9,12 +9,11 @@ Rim=2;
 InnerDia=CanDia-(Rim*2);
 OuterRadius=TotalDia/2;
 CanRadius=CanDia/2;
-//echo(TotalDia > CanDia + 1 ? TotalDia : CanDia +2);
-//OuterDia = TotalDia > CanDia + 1 ? TotalDia : CanDia +2;
+OuterDia = TotalDia > CanDia + 1 ? TotalDia : CanDia +4;
 
 difference()
 {
-  cylinder(h=Height,d=TotalDia);
+  cylinder(h=Height,d=OuterDia);
   translate([0,0,TopHeigh]) cylinder(h=Height,d=CanDia);
 }
 

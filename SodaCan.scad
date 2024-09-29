@@ -29,8 +29,10 @@ union() //Tabs
   translate([OuterRadius+4,0,0]) cylinder(h=4,d=10);
 }
 
-translate([CanRadius-1,-2,TopHeigh+3]) cube([1,4,1]);
-translate([-CanRadius,-2,TopHeigh+3]) cube([1,4,1]);
+translate([CanRadius-1,-2,TopHeigh+3]) cube([0.5,4,1]);
+translate([-CanRadius,-2,TopHeigh+3]) cube([0.5,4,1]);
+
+
 translate([0,10,TopHeigh]) 
 linear_extrude(height=2, convexity=2) 
 text(Text,9, font="Tahoma", halign="center", valign="top");

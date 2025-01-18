@@ -16,13 +16,13 @@ translate([0,0,BoxH]) rotate([90,0,90])
     {
         union()
         {
-          translate([0,0,0]) cube([5,6,BoxW]);
-          translate([2,5,0]) cylinder(h=BoxW,d=6);
+          translate([0,0,0]) cube([5,2,BoxW]);
+          translate([2.5,3,0]) cylinder(h=BoxW,d=5);
         }
         for(x=[5:10:BoxD])
         {
             translate([-5,0,x]) cube([15,10,5]);
         }
-        translate([2,5,-Wall]) cylinder(h=BoxW+DW,d=2);
+        translate([2.5,3,-Wall]) cylinder(h=BoxW+DW,d=2);
     }
 }

@@ -3,10 +3,11 @@ difference()
 {
     cube([200,100,17]);
     translate([95,39,3]) cube([10,10,20]);
+    translate([50,-1,3]) cube([100,50,6]);
     translate([-1,-1,3]) cube([210,40,20]);
-    translate([-1,-1,3]) cube([210,50,7]);
+    translate([-1,-3.5,3]) cube([210,50,6]);
     translate([-1,75,3]) cube([210,40,20]);
-    translate([-1,55,3]) cube([210,50,7]);
+    translate([-1,55,3]) cube([210,50,6]);
 }
 difference()
 {

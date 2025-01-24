@@ -9,3 +9,4 @@ difference()
     }
     translate([-5,2.5,10]) rotate([0,90,0]) cylinder(d=2,h=20);
 }
+translate([0,145,4]) cube([10,1,2]);

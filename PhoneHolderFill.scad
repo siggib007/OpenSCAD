@@ -1,4 +1,4 @@
-Width=170;
+Width=25;
 difference()
 {
     union()

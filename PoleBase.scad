@@ -6,7 +6,12 @@ difference()
 }
 difference()
 {
-  translate([23,23,0]) cube([14,14,60]);
+  translate([22,22,0]) cube([16,16,60]);
   translate([24.9,24.9,50]) cube([10.4,10.4,16]);
+  difference()
+  {
+    translate([2,2,58]) cube([56,56,3]);
+    translate([23,23,58]) cube([14,14,6]);
+  }
 }
 

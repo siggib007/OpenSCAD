@@ -1,6 +1,17 @@
+LenX=180;
+WidthY=40;
+HightZ=45;
+ListH=34;
+ListD=16;
+Buff=5;
+DB=Buff*2;
+FeetDia=20;
+YSpace=(WidthY-FeetDia)/2;
+
 difference()
 {
-  cube([80,40,45]);
-  translate([-1,-2,-1]) cube([17,50,35]);
-  translate([60,10,-1]) cube([30,20,50]);
+  cube([LenX,WidthY,HightZ]);
+  translate([-Buff,-Buff,-Buff]) cube([ListD+Buff,WidthY+DB,ListH+Buff]);
+  translate([LenX-FeetDia,YSpace,-Buff]) 
+    cube([FeetDia+Buff,FeetDia,HightZ+DB]);
 }

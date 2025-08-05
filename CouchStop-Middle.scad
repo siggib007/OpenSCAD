@@ -1,9 +1,9 @@
 LenX=180;
-WidthY=40;
-HightZ=45;
+WidthY=60;
+HightZ=40;
 Buff=5;
 DB=Buff*2;
-FeetDia=20;
+FeetDia=25;
 YSpace=(WidthY-FeetDia)/2;
 
 difference()

@@ -1,11 +1,11 @@
-LenX=180;
-WidthY=40;
+LenX=200;
+WidthY=60;
 HightZ=45;
 ListH=34;
 ListD=16;
 Buff=5;
 DB=Buff*2;
-FeetDia=20;
+FeetDia=25;
 YSpace=(WidthY-FeetDia)/2;
 
 difference()

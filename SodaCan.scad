@@ -1,8 +1,8 @@
 $fn=128;
 Height=10;
 TotalDia=60;
-CanDia=54; // Narrow EU cans 52. Wide US cans 54.
-Text="54 Wide";
+CanDia=52; // Narrow EU cans 52. Wide US cans 54.
+Text="52 EU ";
 TopHeigh=4;
 InnerHeight=2;
 Rim=2;

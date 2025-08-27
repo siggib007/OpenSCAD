@@ -13,10 +13,13 @@ MaxX=BoxW-DW;
 
 difference()
 {
-  cube([95,68,5]);
+  union()
+  {
+    cube([95,68,5]);
+    translate([0,0,0]) cube([5,5,13]);
+    translate([90,0,0]) cube([5,5,13]);
+    translate([0,63,0]) cube([5,5,13]);
+    translate([90,63,0]) cube([5,5,13]);
+  }
   translate([3,3,-1]) cube([89,62,6.1]);
 }
-translate([0,0,0]) cube([5,5,13]);
-translate([90,0,0]) cube([5,5,13]);
-translate([0,63,0]) cube([5,5,13]);
-translate([90,63,0]) cube([5,5,13]);

@@ -1,8 +1,8 @@
 BoxH=50;
 BoxW=50;
 BoxD=50;
-Wall=2;
-Hole=1;
+Wall=4;
+Hole=2;
 Space=1;
 
 $fn = 32;
@@ -10,7 +10,7 @@ cs=Hole+Space;
 DW=Wall*2;
 csWall=cs+Wall;
 YPos=BoxD+DW;
-TopZ=BoxH-(cs*2);
+TopZ=BoxH-cs;
 MaxX=BoxW-DW;
 MaxY=BoxD-DW;
 difference()

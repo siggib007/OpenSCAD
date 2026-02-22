@@ -2,9 +2,6 @@ include <BusinessCardBoxVars.scad>;
 
 LidY = HightZ-Wall;
 HingeY = (HightZ+HW-Wall);
-LockW = FrontHingeLatch;
-LockDia = 3;
-DLD = LockDia+4;
 
 
 cube([LengthX,LidY,Wall]);
@@ -20,6 +17,10 @@ difference()
 }
 difference()
 {
-  translate([(HL)-HFHL,Wall,Wall]) cube([LockW,DLD,DLD+LatchH]);
+  union()
+  {
+    translate([(HL)-HFHL,Wall,Wall]) cube([FrontHingeLatch,DLD,DLD]);
+    translate([(HL)-HFHL,Wall+DLD/2,Wall+DLD/2+LatchH]) rotate([0,90,0]) cylinder(d=DLD,h=FrontHingeLatch);
+  }
   translate([(HL)-HW,Wall+DLD/2,Wall+DLD/2+LatchH]) rotate([0,90,0]) cylinder(d=LockDia,h=DW);
 }

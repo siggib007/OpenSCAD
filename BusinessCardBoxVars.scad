@@ -1,10 +1,12 @@
 $fn=128;
 Wall=3;
-HightZ=20;
 DW=Wall*2;
+
+HightZ=40;
+LengthX=45+DW;
+WidthY=30+DW;
+
 TW=Wall*3;
-LengthX=20+DW;
-WidthY=20+DW;
 Brim=1;
 DB=Brim*2;
 HW=Wall/2;

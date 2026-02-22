@@ -1,8 +1,8 @@
 $fn=128;
 Wall=3;
-InnerW_X=45;
-InnerD_Y=30;
-InnerH_Z=40;
+InnerW_X=87;
+InnerD_Y=57;
+InnerH_Z=65;
 
 DW=Wall*2;
 HightZ=InnerH_Z+DW;

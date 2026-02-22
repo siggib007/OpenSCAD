@@ -1,10 +1,7 @@
 include <BusinessCardBoxVars.scad>;
 
 PenUHinge = NumHinge-1;
-FrontHingeW = 6;
-HFH = FrontHingeW/2;
-FrontHingeLatch = 2;
-HFHL = FrontHingeLatch/2;
+
 
 difference()
 {

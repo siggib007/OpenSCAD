@@ -2,6 +2,7 @@ $fn=128;
 Wall=3;
 HightZ=20;
 DW=Wall*2;
+TW=Wall*3;
 LengthX=20+DW;
 WidthY=20+DW;
 Brim=1;
@@ -12,3 +13,8 @@ NumHinge=3;
 HL=LengthX/2;
 Buff=1;
 
+FrontHingeLatch = 2;
+FrontHingeW = FrontHingeLatch*3;
+HFH = FrontHingeW/2;
+HFHL = FrontHingeLatch/2;
+LatchH=HingePinDia*2;

@@ -20,13 +20,16 @@ difference()
   }
   translate([-Buff,WidthY-HW,HightZ+HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
 }
+
+translate([0,-Wall,0]) 
 difference()
 {
   union()
   {
     translate([HL-HFH,-HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=FrontHingeW);
-    translate([HL-HFH,-HW,0]) cube([FrontHingeW,HW,Wall]);
+    *translate([HL-HFH,-HW,0]) cube([FrontHingeW,HW,Wall]);
+    translate([HL-HFH,-DW,0]) cube([FrontHingeW,TW,Wall]);
   }
-  translate([-Buff,-HW,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
-  translate([HL-HFHL,-DW,-HFHL]) cube([FrontHingeLatch,DW,DW]);
+  translate([-Buff,-Wall,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
+  translate([HL-HFHL,-TW,-HFHL]) cube([FrontHingeLatch,TW,DW]);
 }

@@ -1,12 +1,26 @@
 include <BusinessCardBoxVars.scad>;
-HightZ = LidH;
-HingeY = (WidthY-LidH/2)+2;
-LidY = WidthY-LidH;
 
-cube([LengthX,LidY,HightZ]);
-translate([LengthX/3,LidY,0]) cube([LengthX/3,3,HightZ]);
+LidY = WidthY-Wall;
+TopRHingeX = (LengthX/NumHinge)*2;
+
+cube([LengthX,LidY,Wall]);
 difference()
 {
-  translate([LengthX/3,HingeY,HightZ/2]) rotate([0,90,0]) cylinder(d=LidH,h=LengthX/3);
-  translate([-1,HingeY,HightZ/2]) rotate([0,90,0]) cylinder(d=2,h=LengthX+DW);
+  union()
+  {
+    translate([LengthX/NumHinge,LidY+HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
+    translate([LengthX/NumHinge,LidY,0]) cube([LengthX/NumHinge,HW,Wall]);
+  }
+  translate([-Buff,LidY+HW,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
+}
+difference()
+{
+  union()
+  {
+    translate([0,-HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
+    translate([0,-HW,0]) cube([LengthX/NumHinge,HW,Wall]);
+    translate([TopRHingeX,-HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
+    translate([TopRHingeX,-HW,0]) cube([LengthX/NumHinge,HW,Wall]);
+  }
+  translate([-Buff,-HW,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
 }

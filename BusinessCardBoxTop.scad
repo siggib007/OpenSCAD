@@ -1,7 +1,7 @@
 include <BusinessCardBoxVars.scad>;
 
 LidY = WidthY-Wall;
-TopRHingeX = (LengthX/NumHinge)*2;
+TopRHingeX = (LengthX/NumHinge)*PenUHinge;
 
 cube([LengthX,LidY,Wall]);
 difference()
@@ -10,6 +10,9 @@ difference()
   {
     translate([LengthX/NumHinge,LidY+HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
     translate([LengthX/NumHinge,LidY,0]) cube([LengthX/NumHinge,HW,Wall]);
+    translate([(LengthX/NumHinge)*AntPenUHinge,LidY+HW,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
+    translate([(LengthX/NumHinge)*AntPenUHinge,LidY,0]) cube([LengthX/NumHinge,HW,Wall]);
+
   }
   translate([-Buff,LidY+HW,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
 }

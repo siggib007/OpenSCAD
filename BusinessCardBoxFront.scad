@@ -12,6 +12,8 @@ difference()
   {
     translate([LengthX/NumHinge,HingeY,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
     translate([LengthX/NumHinge,LidY,0]) cube([LengthX/NumHinge,HW,Wall]);
+    translate([(LengthX/NumHinge)*AntPenUHinge,HingeY,HW]) rotate([0,90,0]) cylinder(d=Wall,h=LengthX/NumHinge);
+    translate([(LengthX/NumHinge)*AntPenUHinge,LidY,0]) cube([LengthX/NumHinge,HW,Wall]);
   }
   translate([-Buff,HingeY,HW]) rotate([0,90,0]) cylinder(d=HingePinDia,h=LengthX+DW);
 }

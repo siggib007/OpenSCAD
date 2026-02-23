@@ -1,6 +1,6 @@
 include <BusinessCardBoxVars.scad>;
 
-PenUHinge = NumHinge-1;
+
 FrontHingeY = 6;
 FrontHingeCutStart= -(FrontHingeY+(FrontHingeY/2));
 

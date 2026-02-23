@@ -12,7 +12,7 @@ WidthY=InnerD_Y+DW;
 TW=Wall*3;
 HW=Wall/2;
 HingePinDia=2;
-NumHinge=3;
+NumHinge=6;
 HL=LengthX/2;
 Buff=1;
 DB=Buff*2;
@@ -25,3 +25,5 @@ LatchH=HingePinDia*2;
 
 LockDia = 3;
 DLD = LockDia+4;
+PenUHinge = NumHinge-1;
+AntPenUHinge = NumHinge-2;

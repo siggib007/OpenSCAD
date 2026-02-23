@@ -4,8 +4,9 @@ CutoOutYZ=LockDia*2;
 RingDia=8;
 RingR=RingDia/2;
 
+
 difference()
 {
-  rotate_extrude() translate([RingDia,0,0]) circle(r=LockDia*0.75);
+  rotate_extrude() translate([RingDia,0,0]) circle(d=LockDia*0.75);
   translate([-CutOutX/2,RingR,-LockDia]) cube([CutOutX,RingDia,RingDia]);
 }

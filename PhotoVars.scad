@@ -1,5 +1,5 @@
-WideX=240;
-DepthY=190;
+WideX=235;
+DepthY=185;
 Thick=2;
 Buff=1;
 SlottH=8;

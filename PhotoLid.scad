@@ -1,3 +1,3 @@
 include <PhotoVars.scad>;
 
-cube([LidX,LidY,LidZ+Buff]);
+cube([LidX,LidY,LidZ]);

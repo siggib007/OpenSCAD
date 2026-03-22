@@ -21,3 +21,5 @@ difference()
   translate([OuterW-Wall,-Buff,-Buff]) cube([Wall+Buff,OuterD+Buff,LipH+Buff]);
   translate([-Buff,OuterD-Wall,-Buff]) cube([OuterW+DW+Buff,Wall+DB+Buff,LipH+Buff]);
 }
+translate([20,-Buff,LipH]) cube([Wall,OuterD+DB,Wall]);
+translate([OuterW-20,-Buff,LipH]) cube([Wall,OuterD+DB,Wall]);

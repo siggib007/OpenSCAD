@@ -6,19 +6,19 @@ SlottH=8;
 ConnY=10;
 BeamX=10;
 DB=Buff*2;
-Conn=Thick*3;
+ConnZ=Thick*3;
 
 BaseDepthY=70;
 BaseHeightZ=10;
 
 BoxDepthY=40;
 BoxH=30;
-Wall=5;
+Wall=3;
 Brim=2;
 DBR=Brim*2;
 
 LidZ=3;
 LidX=WideX-DBR;
-LidY=DepthY-DBR-Conn;
+LidY=BoxDepthY-DBR-ConnZ;
 
 DW=Wall*2;

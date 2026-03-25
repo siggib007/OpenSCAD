@@ -29,12 +29,11 @@ difference()
   translate([-Buff,-Buff,-Buff]) cube([Wall+Buff,OuterD+DB,LipH+Buff]);
   translate([OuterW-Wall,-Buff,-Buff]) cube([Wall+Buff,OuterD+Buff,LipH+Buff]);
   translate([-Buff,OuterD-Wall,-Buff]) cube([OuterW+DW+Buff,Wall+DB+Buff,LipH+Buff]);
+  translate([20,-Buff,LipH]) cube([Wall,OuterD+DB,Buff]);
+  translate([OuterW-20,-Buff,LipH]) cube([Wall,OuterD+DB,Buff]);
 }
 
 translate([PoleX1,PoleY1,OuterH]) cube([PoleSQ,PoleSQ,PoleZ]);
 translate([PoleX2,PoleY1,OuterH]) cube([PoleSQ,PoleSQ,PoleZ]);
 translate([PoleX1,PoleY2,OuterH]) cube([PoleSQ,PoleSQ,PoleZ]);
 translate([PoleX2,PoleY2,OuterH]) cube([PoleSQ,PoleSQ,PoleZ]);
-
-translate([20,-Buff,LipH]) cube([Wall,OuterD+DB,Wall]);
-translate([OuterW-20,-Buff,LipH]) cube([Wall,OuterD+DB,Wall]);

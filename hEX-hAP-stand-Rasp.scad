@@ -29,6 +29,8 @@ difference()
   translate([-Buff,-Buff,-Buff]) cube([Wall+Buff,OuterD+DB,LipH+Buff]);
   translate([OuterW-Wall,-Buff,-Buff]) cube([Wall+Buff,OuterD+Buff,LipH+Buff]);
   translate([-Buff,OuterD-Wall,-Buff]) cube([OuterW+DW+Buff,Wall+DB+Buff,LipH+Buff]);
+  translate([20,-Buff,LipH]) cube([Wall,OuterD+DB,Buff]);
+  translate([OuterW-20,-Buff,LipH]) cube([Wall,OuterD+DB,Buff]);  
 }
 
 translate([PoleX1,PoleY1,0]) cube([PoleSQ,PoleSQ,PoleZ]);

@@ -1,5 +1,5 @@
-InnerW=115;
-InnerD=90;
+include <hEX-hAP-Vars.scad>;
+
 InnerH=31;
 Front=25;
 DevFeet=5;
@@ -7,19 +7,13 @@ SideCutH=25;
 SideCutD=45;
 SideCutPosD=25;
 SideCutPosH=5;
-LipH=4;
-Wall=5;
 VentH=3;
 
-DW=Wall*2;
 BoxFloor=LipH+Wall;
-OuterW=InnerW+DW;
-OuterD=InnerD+DW;
 OuterH=LipH+InnerH+DW+DW;
-Buff=1;
-DB=Buff*2;
 TopVentH=BoxFloor+InnerH+Buff;
 BottomVentH=BoxFloor;
+
 
 difference()
 {

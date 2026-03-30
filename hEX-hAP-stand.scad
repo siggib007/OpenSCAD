@@ -28,7 +28,7 @@ difference()
   // Top vents  
   translate([DW,-Buff,TopVentH]) cube([InnerW/3,OuterD+DW,VentH]);
   translate([((InnerW/3)*2),-Buff,TopVentH]) cube([InnerW/3,OuterD+DW,VentH]);
-  translate([-Buff,DW,TopVentH]) cube([OuterW+DW,InnerD/3,DB]);
+  translate([-Buff,DW,TopVentH]) cube([OuterW+DW,InnerD/3,VentH]);
   translate([-Buff,((InnerD/3)*2),TopVentH]) cube([OuterW+DW,InnerD/3,VentH]);
   
   // Bottom vents  

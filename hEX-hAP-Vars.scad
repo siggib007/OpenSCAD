@@ -5,8 +5,9 @@ Wall=5;
 TabX=20;
 
 DW=Wall*2;
+TW=Wall*3;
 OuterW=InnerW+DW;
 OuterD=InnerD+DW;
 Buff=1;
 DB=Buff*2;
-
+BackStopWall=2;

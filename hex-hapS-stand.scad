@@ -5,10 +5,10 @@ InnerSW=130;
 OuterSW=InnerSW+DW;
 Front=25;
 DevFeet=5;
-SideCutH=25;
-SideCutD=45;
-SideCutPosD=25;
-SideCutPosH=5;
+SideCutH=40;
+SideCutD=80;
+SideCutPosD=10;
+SideCutPosH=0;
 VentH=3;
 
 BoxFloor=LipH+Wall;
@@ -16,7 +16,7 @@ OuterH=LipH+InnerH+DW+DW;
 TopVentH=BoxFloor+InnerH+Buff;
 BottomVentH=BoxFloor;
 LipXwidth=InnerSW-InnerW-(Wall/2);
-ExtraBack=61;
+ExtraBack=63;
 
 
 difference()

@@ -49,8 +49,8 @@ difference()
   
   //Stacking lip
   translate([-Buff,-Buff,-Buff]) cube([OuterSW+DB+Buff,Wall+Buff,LipH+Buff]);
-  translate([-Buff,-Buff,-Buff]) cube([LipXwidth+Buff,OuterD+DB,LipH+Buff]);
-  translate([OuterW+(Wall/2),-Buff,-Buff]) cube([LipXwidth+Wall+Buff,OuterD+Buff,LipH+Buff]);
+  translate([-Buff,-Buff,-Buff]) cube([(LipXwidth/2)+Wall+Buff,OuterD+DB,LipH+Buff]);
+  translate([InnerW+(LipXwidth/2)+Wall,-Buff,-Buff]) cube([LipXwidth+Wall,OuterD+Buff,LipH+Buff]);
   translate([-Buff,OuterD-Wall,-Buff]) cube([OuterSW+DB+Buff,Wall+DB+Buff,LipH+Buff]);
 }
 translate([0,OuterD,LipH]) cube([OuterSW,BackStopWall+ExtraBack,Wall]);
